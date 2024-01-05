@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+   
+  </head>
+  <body class="bg-black">
+    <div
+      class=" wrapper bg-hero-pattern font-display w-[100vw] h-[100vh] bg-center bg-no-repeat bg-cover "
+    >
+      <div
+        class="fixed top-[5%] left-[30%] w-[13em] h-[13em] rounded-full shadow-dinu1 bg-gradient-to-tl from-dinu1 to-dinu2 animate-circle1"
+      ></div>
+      <div
+        class="absolute bottom-[5%] right-[30%] w-[19em] h-[19em] rounded-full shadow-dinu3 bg-gradient-to-tl from-dinu3 to-dinu20 animate-circle2"
+      ></div>
+      <!-- card -->
+      <div
+        class="card-wrapper absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[450px] border-2 border-dinu4 flex flex-col items-center justify-evenly bg-dinu5 backdrop-blur-lg rounded-[15px] px-[20px] py-[40px] text-white "
+      >
+        <div>
+          <img src="./assets/profile-pic (16).png" alt="user" class="border-[2px] border-dinu4 w-[150px] h-[150px] rounded-full" />
+        </div>
+        <div ><h2 class="user-name text-[2rem] text-center">Tirthbas Mishra</h2></div>
+        <div ><h3 class="text-center text-dinu7 text-lg">SDE-1,Microsoft</h3></div>
+        <!-- buttom group -->
+        <div class="bottom-group flex justify-between gap-[10px] p-6">
+          <button
+            onclick="openModal()"
+            class=" flex justify-center items-center gap-[7px] px-[3px] py-[6px] bg-dinu8 border-[2px] border-stone-400 rounded-[4px] cursor-pointer text-white transition-all duration-[0.5s] hover:bg-dinu9 hover:text-dinu10"
+          >
+            <i class="fa-solid fa-share"></i>
+            <div>share my profile</div>
+          </button>
+          <button
+            class="capitalize w-[150px] px-[1px] py-[4px] bg-dinu8 border-[2px] border-stone-400 rounded-[4px] cursor-pointer transition-all duration-[0.5s] text-white hover:bg-dinu9 hover:text-dinu10"
+          >
+            Follow me
+          </button>
+        </div>
+      </div>
+      <!-- modal component  -->
+      <div class="modal">
+        <div class="modal-header">
+          <h1 class="text-[30px]">Share My Profile</h1>
+          <div>
+            <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-[20px]">Share this via</h3>
+
+          <div class="icon-container">
+            <a href="#" class="icon" id="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="icon" id="twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="icon" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="icon" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#" class="icon" id="telegram">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- overlay -->
+      <div class="overlay" onclick="closeModal()"></div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/ff493ffc58.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
